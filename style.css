@@ -56,15 +56,17 @@ body {
 
 /* Hero Section */
 .hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+  background: linear-gradient(120deg, #111, #333);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  position: relative;
+  overflow: hidden;
 }
+
 #bg-video {
   position: absolute;
   width: 100%;
