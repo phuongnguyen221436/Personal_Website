@@ -227,15 +227,18 @@ body {
   font-weight: 200;
   line-height: 2;
 }
-.project-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
 .projects-section {
   background-color: #0a0a0a;
   padding: 80px 20px;
   color: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
 .project-cards {
@@ -243,7 +246,6 @@ body {
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .project-card {
@@ -255,7 +257,7 @@ body {
 
 .project-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: transform 0.4s ease;
 }
 
@@ -269,19 +271,22 @@ body {
 
 .project-info {
   margin-top: 15px;
+  font-family: 'Inter', sans-serif;
 }
 
 .project-info h4 {
+  font-size: 0.95rem;
   font-weight: 500;
-  font-size: 1rem;
-  color: #d1d1d1;
+  color: #d4d4d4;
 }
 
 .project-info p {
-  font-weight: 300;
   font-size: 0.95rem;
-  color: #ccc;
+  font-weight: 300;
+  color: #c4c4c4;
+  line-height: 1.5;
 }
+
 
 
 /* Skills */
