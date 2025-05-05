@@ -5,67 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brielle Nguyen | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
   <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <nav class="navbar">
+    <div class="logo">brielle</div>
+    <ul class="nav-links">
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
     </ul>
+    <div class="nav-icons">
+      <a href="#" class="contact-btn">Contact</a>
+      <i class="fas fa-phone"></i>
+      <i class="fas fa-search"></i>
+      <i class="far fa-bookmark"></i>
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
 
   <!-- Hero Section -->
-  <header id="hero">
-    <h1>Hi, I'm Brielle 👋</h1>
-    <p>Software Engineer & Product Enthusiast</p>
-    <a href="#projects" class="btn">View My Work</a>
+  <header class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/video/bg.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-text">
+      <h1>Welcome to Brielle’s Portfolio</h1>
+      <p>Team Google!</p>
+      <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="next-box">
+      <img src="assets/images/preview.jpg" alt="Next Preview">
+      <div class="next-text">
+        <small>Next</small>
+        <p>Story Reel</p>
+      </div>
+    </div>
+
+    <div class="mute-toggle">
+      <i class="fas fa-volume-mute"></i>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Brief introduction and background.</p>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-item">
-      <h3>Company Name</h3>
-      <p>Role and responsibilities.</p>
-    </div>
-    <!-- Add more experience items as needed -->
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Project Title</h3>
-      <p>Short description of the project.</p>
-    </div>
-    <!-- Add more project items as needed -->
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Brielle Nguyen</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="script.js"></script>
 </body>
 </html>
