@@ -12,6 +12,9 @@ body {
   color: white;
   line-height: 1.6;
   overflow-x: hidden;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Loading Screen */
@@ -114,6 +117,8 @@ body {
   animation: slideUp 1s ease-out;
 }
 .hero h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 100;
   font-size: 7rem;
   font-weight: 200;
   color: white;
@@ -190,6 +195,8 @@ body {
   margin: 0 auto;
 }
 .section h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 100;
   font-size: 2.5rem;
   font-weight: 200;
   margin-bottom: 1rem;
