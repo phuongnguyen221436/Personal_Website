@@ -149,7 +149,7 @@ body {
 .hero-icon {
   flex: 1;
   max-width: 320px;
-  animation: spin 20s linear infinite, spin 3s ease-in-out infinite;
+  animation: spin 20s linear infinite, float 3s ease-in-out infinite;
 }
 
 @keyframes spin {
