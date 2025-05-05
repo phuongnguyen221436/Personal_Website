@@ -27,6 +27,7 @@ body {
   padding: 1rem 2rem;
   z-index: 1000;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
 }
 .logo {
   font-weight: 700;
@@ -42,10 +43,20 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: color 0.3s ease;
+  position: relative;
 }
-.nav-links a:hover {
-  color: #00bfff;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #00bfff;
+  transition: width 0.3s;
+}
+.nav-links a:hover::after {
+  width: 100%;
 }
 .contact-btn {
   background-color: white;
@@ -54,6 +65,10 @@ body {
   text-decoration: none;
   border-radius: 4px;
   font-weight: 500;
+  transition: background 0.3s;
+}
+.contact-btn:hover {
+  background-color: #eee;
 }
 
 /* Hero Section */
@@ -66,10 +81,13 @@ body {
   padding: 6rem 3rem 4rem;
   gap: 4rem;
   position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in;
 }
 .hero-content {
   flex: 1;
   max-width: 600px;
+  animation: slideUp 1s ease-out;
 }
 .hero h1 {
   font-size: 7rem;
@@ -107,12 +125,24 @@ body {
 .hero-icon {
   flex: 1;
   max-width: 320px;
-  animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite, float 3s ease-in-out infinite;
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 /* Section Styles */
@@ -127,6 +157,15 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: white;
+  position: relative;
+}
+.section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #00bfff;
+  margin-top: 0.5rem;
 }
 .section p, .skills-list li {
   font-size: 1rem;
@@ -137,6 +176,7 @@ body {
 /* Experience & Projects */
 .experience-item, .project-card {
   margin-bottom: 2rem;
+  animation: fadeIn 1.2s ease-in;
 }
 .project-grid {
   display: grid;
@@ -149,12 +189,19 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(255,255,255,0.05);
   color: #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.1);
 }
 
 /* Skills */
 .skills-list {
   list-style: none;
   padding: 0;
+  columns: 2;
+  gap: 2rem;
 }
 .skills-list li {
   margin-bottom: 0.5rem;
@@ -194,5 +241,8 @@ footer {
   }
   .hero-icon {
     max-width: 180px;
+  }
+  .skills-list {
+    columns: 1;
   }
 }
