@@ -3,51 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brielle Nguyen | Portfolio</title>
+  <title>Brielle Nguyen | SWE & Product</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-  <header>
-    <h1>Brielle Nguyen</h1>
-    <p>Software Engineer · Product Thinker · Problem Solver</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+
+  <header id="hero" data-aos="fade-in">
+    <h1>Hi, I'm Brielle 👋</h1>
+    <p>Software Engineer & Product Enthusiast</p>
+    <a href="#projects" class="btn">Explore My Work</a>
   </header>
 
-  <section id="about">
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      Hi! I’m Brielle — I recently graduated from Western University with a dual degree in Computer Science and Business. I’m passionate about building thoughtful, data-driven products that create real-world impact. I’ve worked at S&P Global and interned in product roles at Deloitte and Appian AI.
+      I'm a dual-degree graduate in Computer Science and Business from Western University. My passion lies in building data-driven products that make a real-world impact.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Credit Estimate API – S&P Global</h3>
-      <p>Transitioned data pipelines from monolithic to microservices using Go and Kubernetes, improving system reliability by 30%.</p>
+  <!-- Experience Section -->
+  <section id="experience" data-aos="fade-right">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>S&P Global – Software Engineer Intern</h3>
+      <p>Developed scalable data pipelines and microservices using Go and Kubernetes, enhancing system reliability by 30%.</p>
     </div>
-    <div class="project">
-      <h3>Payment Processing System</h3>
-      <p>Built a scalable backend using Node.js and MongoDB to handle real-time payments with custom fraud detection logic.</p>
-    </div>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>This website! Designed to showcase my skills, background, and passion for engineering and product work.</p>
+    <div class="card">
+      <h3>Deloitte – Product Intern</h3>
+      <p>Collaborated on digital transformation projects, defining MVP features for internal tools used across multiple teams.</p>
     </div>
   </section>
 
-  <section id="contact">
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>Payment Processing Platform</h4>
+        <p>Engineered a secure backend with Node.js and MongoDB, implementing real-time fraud detection mechanisms.</p>
+      </div>
+      <div class="project-card">
+        <h4>Smart Resume Parser</h4>
+        <p>Utilized Python and NLP techniques to extract structured data from resumes, presenting it in an intuitive UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" data-aos="zoom-in">
+    <h2>Resume</h2>
+    <a href="resume.pdf" class="btn" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Email me at <a href="mailto:brielle.nguyen@email.com">brielle.nguyen@email.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/briellenguyen" target="_blank">briellenguyen</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:brielle.nguyen@example.com">brielle.nguyen@example.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/briellenguyen" target="_blank">LinkedIn Profile</a></p>
   </section>
 
   <footer>
     <p>© 2025 Brielle Nguyen</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
