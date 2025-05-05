@@ -1,80 +1,73 @@
 :root {
-  --bg-color: #ffffff;
-  --text-color: #333333;
-  --accent-color: #007acc;
-}
-
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
+  --primary-color: #333;
   --accent-color: #66a6ff;
+  --background-color: #fff;
+  --text-color: #333;
+  --font-family: 'Inter', sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
   color: var(--text-color);
-  font-family: 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent-color);
 }
 
 header {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(120deg, var(--accent-color), #89f7fe);
-  color: #fff;
+  padding: 4rem 1rem;
+  background: linear-gradient(120deg, #89f7fe, var(--accent-color));
+  color: var(--background-color);
 }
 
 .btn {
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
   text-decoration: none;
-  transition: background-color 0.3s;
+  border-radius: 5px;
 }
 
 .btn:hover {
-  background-color: #000;
+  background-color: var(--accent-color);
 }
 
 section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-h2 {
-  color: var(--accent-color);
-  margin-bottom: 20px;
-}
-
-.card, .project-card {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-body.dark-mode .card, body.dark-mode .project-card {
-  background-color: #1f1f1f;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-#theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  cursor: pointer;
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
 }
