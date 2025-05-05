@@ -2,58 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brielle Nguyen | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brielle Nguyen | SWE & Product Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="logo">brielle</div>
+    <div class="logo">Brielle</div>
     <ul class="nav-links">
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Solutions</a></li>
-      <li><a href="#">Industries</a></li>
-      <li><a href="#">Works</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Careers</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-icons">
-      <a href="#" class="contact-btn">Contact</a>
-      <i class="fas fa-phone"></i>
-      <i class="fas fa-search"></i>
-      <i class="far fa-bookmark"></i>
-      <i class="fas fa-bars"></i>
-    </div>
+    <a href="#contact" class="contact-btn">Let’s Talk</a>
   </nav>
 
   <!-- Hero Section -->
   <header class="hero">
     <video autoplay muted loop id="bg-video">
-      <source src="assets/video/bg.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
+      <source src="assets/video/background.mp4" type="video/mp4">
     </video>
-    <div class="hero-text">
-      <h1>Welcome to Brielle’s Portfolio</h1>
-      <p>Team Google!</p>
-      <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
-    </div>
-
-    <div class="next-box">
-      <img src="assets/images/preview.jpg" alt="Next Preview">
-      <div class="next-text">
-        <small>Next</small>
-        <p>Story Reel</p>
-      </div>
-    </div>
-
-    <div class="mute-toggle">
-      <i class="fas fa-volume-mute"></i>
+    <div class="hero-content">
+      <h1>Hi, I'm Brielle 👋</h1>
+      <p>Aspiring Software Engineer & Product Manager passionate about building impactful digital experiences.</p>
+      <a href="#projects" class="hero-btn">Explore My Work</a>
     </div>
   </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a dual-degree graduate from Western University with a BSc in Computer Science and an HBA from Ivey Business School. My journey has taken me from backend systems engineering at S&P Global to product strategy at Deloitte and Appen AI. I'm driven by a curiosity to bridge technology with meaningful user experiences, and I thrive in roles that balance problem-solving, systems thinking, and product impact.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>S&P Global – Software Engineering Intern (Jul–Oct 2024)</h3>
+        <p>Built microservices with Go/Kubernetes for market data; optimized search with ML (Python, TensorFlow), cut response times by 20%; refactored legacy frontend with React/Node.js; contributed to ETL pipeline with SQL, Spark; improved CI/CD using Jenkins, Docker, Terraform.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Hydro One – Technical Analyst Intern (May–Jul 2024)</h3>
+        <p>Coordinated cloud migration planning with Accenture and Capgemini; created secure and scalable cloud architecture documentation; facilitated product-engineering communications to launch features that boosted user engagement by 20%.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Appen AI – Product Marketing Intern (Jun–Aug 2023)</h3>
+        <p>Led product positioning for LLM RLHF platform; boosted lead generation by 25%; used interviews and analytics to reprioritize roadmap based on a key 20% feature drop-off insight.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Deloitte – Product Management Intern (Jan–Apr 2023)</h3>
+        <p>Drove ERP go-to-market efforts; recovered $1.6M through pricing analysis; defined product features from user needs, boosting adoption by 15%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>Real-Time Payment Processing</h4>
+          <p>Full-stack system for credit and debit transactions. Used Java/Spring Boot backend with REST APIs, React frontend, SQL and MongoDB for data, and integrated AWS, Docker, Jenkins for deployment.</p>
+        </div>
+        <div class="project-card">
+          <h4>Resume Parser</h4>
+          <p>Python-based resume parser using spaCy NLP to extract key metadata from unstructured PDFs, enabling structured candidate profiles and improved hiring filters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <ul class="skills-list">
+        <li><strong>Programming:</strong> Python, Java, JavaScript, C/C++, SQL, HTML, CSS</li>
+        <li><strong>Frameworks:</strong> React, Node.js, Express, Redux, Spring Boot, Django</li>
+        <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
+        <li><strong>Tools:</strong> Docker, Jenkins, AWS, Git, Hadoop, Apache Spark, Tableau, PowerBI, Figma, Salesforce</li>
+        <li><strong>Methodologies:</strong> Agile, Scrum, A/B Testing, UX Research, Roadmapping</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>I'm always open to new opportunities, collaborations, or just a chat!</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:nguyenhaphuong2002@gmail.com">nguyenhaphuong2002@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/briellenguyen" target="_blank">linkedin.com/in/briellenguyen</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Brielle Nguyen. Built with ❤️</p>
+  </footer>
 
 </body>
 </html>
