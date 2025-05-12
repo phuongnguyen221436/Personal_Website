@@ -285,6 +285,54 @@ body {
   border-radius: 12px;
   object-fit: cover;
 }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-item {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.02);
+}
+
+.project-media {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.project-text {
+  padding: 1rem;
+  color: #f0f0f0;
+}
+
+.project-text h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.project-text p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: #ccc;
+}
+
+.project-text a {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 
 
 .project-info p {
