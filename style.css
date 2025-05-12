@@ -271,7 +271,7 @@ body {
 .project-video {
   width: 100%;
   height: auto;
-  max-height: 100px;
+  max-height: 150px;
   object-fit: cover;
   display: block;
 }
