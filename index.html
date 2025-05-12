@@ -102,9 +102,12 @@
 
       <!-- CineMatch Project Card -->
       <div class="project-card" onclick="openModal()">
-        <video autoplay muted loop playsinline class="project-video">
-          <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
-        </video>
+        <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank">
+          <video autoplay muted loop playsinline class="project-video">
+            <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
         <div class="project-info">
           <h4>CineMatch</h4>
           <p>AI-powered iOS app for personalized movie recommendations using mood filters and a custom ranking system.</p>
@@ -113,7 +116,7 @@
 
 
       <!-- Fintech -->
-      <div class="project-box">
+      <div class="project-box" onclick="openFintechModal()>
         <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">
           <video autoplay muted loop playsinline class="project-video">
             <source src="assets/videos/paymentpsdemo.mp4" type="video/mp4">
@@ -130,6 +133,50 @@
     </div>
   </div>
 </section>
+<!-- Fintech Case Study Modal -->
+<div id="fintech-modal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeFintechModal()">×</span>
+    <div class="modal-body">
+      <h2>Fintech — Simulated Payment Processing App</h2>
+      <p><strong>Timeframe:</strong> 2025</p>
+      <p><strong>Category:</strong> Personal / Technical Project</p>
+
+      <h3>Summary</h3>
+      <p>
+        This project simulates a real-world e-commerce checkout experience. I designed and built a multi-step flow using React, TypeScript, and CSS,
+        with localStorage support, a dynamic cart system, and receipt generation — deployed on Render.
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Many payment demos skip over realistic flows and focus only on single-step transactions. I wanted to build a user-friendly flow that mirrors what real users experience: a cart, form validation, and receipts — but fully simulated.
+      </p>
+
+      <h3>Features</h3>
+      <ul>
+        <li><strong>Dynamic Cart System:</strong> Add/remove products, track running totals, and persist cart in localStorage</li>
+        <li><strong>Multi-Step UI:</strong> Cart → Payment → Receipt flow, with progress tracking and validation</li>
+        <li><strong>Custom Receipt Generation:</strong> Full receipt with item breakdown, date, amount, and status badge</li>
+        <li><strong>Deployed on Render:</strong> Fully functional live version for testing</li>
+      </ul>
+
+      <h3>Demo</h3>
+      <video autoplay muted loop playsinline style="width: 100%; border-radius: 12px;">
+        <source src="assets/videos/paymentpsdemo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Outcome & Learning</h3>
+      <p>
+        I sharpened my frontend state management skills, practiced building responsive layouts, and implemented full simulated logic without a backend. It’s now one of the most polished solo apps in my portfolio.
+      </p>
+
+      <p><strong>GitHub:</strong> <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+</div>
+
 <div id="cinematch-modal" class="modal-overlay">
   <div class="modal-content">
     <span class="close-button" onclick="closeModal()">×</span>
@@ -244,6 +291,21 @@
     function closeModal() {
       document.getElementById("cinematch-modal").style.display = "none";
     }
+    function openFintechModal() {
+      document.getElementById("fintech-modal").style.display = "flex";
+    }
+
+    function closeFintechModal() {
+      document.getElementById("fintech-modal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const cm = document.getElementById("cinematch-modal");
+      const fm = document.getElementById("fintech-modal");
+      if (event.target === cm) closeModal();
+      if (event.target === fm) closeFintechModal();
+    };
+
   
     // Close modal when clicking outside the content box
     window.onclick = function(event) {
