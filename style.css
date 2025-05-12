@@ -257,7 +257,7 @@ body {
 }
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 5 auto;
 }
 .section h2 {
   font-family: 'Manrope', sans-serif;
