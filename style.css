@@ -247,6 +247,57 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.projects-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-box {
+  flex: 1 1 45%;
+  max-width: 500px;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+
+.project-video {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 1rem;
+  color: #f0f0f0;
+}
+
+.project-info h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin-bottom: 0.75rem;
+}
+
+.project-link {
+  color: #64ffda;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 
 .project-card {
   width: 300px;
