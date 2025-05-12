@@ -94,37 +94,47 @@
 
 
 <!-- Projects Section -->
+<!-- Projects Section -->
 <section id="projects" class="section projects-section">
   <div class="container">
-    <h2>Projects</h2>
+    <h2 class="section-title">Projects</h2>
 
     <div class="projects-row">
 
-      <!-- CineMatch Project Card -->
-      <div class="project-item" onclick="openFintechModal()">
-        <video autoplay muted loop playsinline class="project-media">
-          <source src="assets/videos/cinematch-demo.mp4" type="video/mp4">
-        </video>
-        <div class="project-text">
+      <!-- CineMatch -->
+      <div class="project-box" onclick="openModal()">
+        <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank">
+          <video autoplay muted loop playsinline class="project-video">
+            <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <div class="project-info" onclick="openModal()">
           <h4>CineMatch</h4>
-          <p>AI-powered iOS app for personalized movie recommendations using mood filters, GPT review summaries, and a unique belly ranking system.</p>
-          <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank">View on GitHub</a>
+          <p>AI-powered iOS app for personalized movie recommendations using mood filters, GPT review summaries, and a custom “belly ranking” system.</p>
+          <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank" class="project-link">View on GitHub</a>
         </div>
       </div>
 
-      <!-- Fintech Project Card -->
-      <div class="project-item" onclick="openFintechModal()">
-        <img src="assets/images/payment-project-thumbnail.png" alt="E-Commerce Checkout" class="project-media" />
-        <div class="project-text">
+      <!-- Fintech -->
+      <div class="project-box" onclick="openFintechModal()">
+        <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">
+          <video autoplay muted loop playsinline class="project-video">
+            <source src="assets/videos/paymentpsdemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <div class="project-info" onclick="openFintechModal()">
           <h4>Fintech</h4>
-          <p>A React + TypeScript e-commerce app that simulates a dynamic checkout flow with a digital receipt and secure multi-step UI. Deployed on Render.</p>
-          <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">View on GitHub</a>
+          <p>A TypeScript + React payment simulation with a real-time cart, multi-step secure checkout, and digital receipts. Fully deployed on Render.</p>
+          <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank" class="project-link">View on GitHub</a>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- Fintech Case Study Modal -->
 <div id="fintech-modal" class="modal-overlay">
