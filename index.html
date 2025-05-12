@@ -99,20 +99,17 @@
 
     <div class="projects-row">
 
-      <!-- CineMatch -->
-      <div class="project-box">
-        <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank">
-          <video autoplay muted loop playsinline class="project-video">
-            <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </a>
+      <!-- CineMatch Project Card -->
+      <div class="project-card" onclick="openModal()">
+        <video autoplay muted loop playsinline class="project-video">
+          <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
+        </video>
         <div class="project-info">
           <h4>CineMatch</h4>
-          <p>AI-powered iOS app for personalized movie recommendations using mood filters, GPT review summaries, and a custom “belly ranking” system.</p>
-          <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank" class="project-link">View on GitHub</a>
+          <p>AI-powered iOS app for personalized movie recommendations using mood filters and a custom ranking system.</p>
         </div>
       </div>
+
 
       <!-- Fintech -->
       <div class="project-box">
@@ -132,6 +129,22 @@
     </div>
   </div>
 </section>
+<div id="cinematch-modal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">×</span>
+    <div class="modal-body">
+      <!-- Replace this with real content or keep the placeholder for now -->
+      <h2>CineMatch – AI Movie Guide</h2>
+      <p><strong>Timeframe:</strong> 2024–2025</p>
+      <p><strong>Summary:</strong> CineMatch is an AI-powered iOS app that recommends movies based on mood, preferences, and emotional feedback...</p>
+      <video autoplay muted loop playsinline style="width:100%; border-radius:12px;">
+        <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
+      </video>
+      <!-- Add more case study details here as needed -->
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -151,6 +164,61 @@
       </ul>
     </div>
   </section>
+  <!-- CineMatch Case Study Modal -->
+<div id="cinematch-modal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">×</span>
+    <div class="modal-body">
+      <h2>CineMatch — AI-Powered Movie Guide</h2>
+      <p><strong>Timeframe:</strong> 2024–2025</p>
+      <p><strong>Category:</strong> Personal / Technical Product</p>
+
+      <h3>Summary</h3>
+      <p>
+        CineMatch is an AI-powered iOS app that recommends movies based on a user’s mood, preferences, and emotional response.
+        I designed, built, and tested it using SwiftUI, FastAPI, PostgreSQL, and OpenAI’s API. It includes a unique “belly ranking” system,
+        GPT-generated review summaries, and mood-driven search. Over 40 beta users tested the app.
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Existing streaming platforms often offer shallow or repetitive recommendations. Traditional filters fail to reflect emotional taste or shifting moods.
+        CineMatch aims to make finding the *right* movie easier and more personal.
+      </p>
+
+      <h3>Research & Ideation</h3>
+      <ul>
+        <li>People often rewatch emotionally satisfying films—not just “top-rated” ones.</li>
+        <li>Users dislike reading long reviews.</li>
+        <li>Genre is not always predictive of interest.</li>
+      </ul>
+      <p>Validated the need for a mood-first, feedback-driven recommendation tool.</p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Belly Ranking:</strong> “Loved it”, “It was fine”, “Didn’t like it” — generates a relative 1–10 score</li>
+        <li><strong>Mood Filtering:</strong> Users input their mood or vibe, parsed via natural language</li>
+        <li><strong>GPT Review Summaries:</strong> One-paragraph takeaways auto-generated from online reviews</li>
+      </ul>
+
+      <h3>Demo</h3>
+      <video autoplay muted loop playsinline style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+        <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Launch & Results</h3>
+      <ul>
+        <li>40+ beta users in 2 weeks</li>
+        <li>80% said recommendations felt more personal than Netflix</li>
+        <li>30% drop in onboarding drop-off after UI tweaks</li>
+      </ul>
+
+      <h3>Outcome & Learning</h3>
+      <p>
+        CineMatch taught me how to scope MVPs, balance delight with feasibility, and use user feedback to iterate rapidly.
+        Most importantly, it reaffirmed that great products
+
 
   <!-- Contact Section -->
   <section id="contact" class="section">
@@ -175,6 +243,24 @@
       offset: 50
     });
   </script>
+  <script>
+    function openModal() {
+      document.getElementById("cinematch-modal").style.display = "flex";
+    }
+  
+    function closeModal() {
+      document.getElementById("cinematch-modal").style.display = "none";
+    }
+  
+    // Close modal when clicking outside the content box
+    window.onclick = function(event) {
+      const modal = document.getElementById("cinematch-modal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+  
   
 </body>
 </html>
