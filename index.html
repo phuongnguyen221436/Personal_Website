@@ -39,23 +39,21 @@
   
 
 <!-- Experience Section -->
-<div data-aos="fade-up">
-  
 <section id="experience" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
   <div class="container" style="max-width: 800px; margin: 0 auto;">
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;">Experience</h2>
+    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;" data-aos="fade-right">Experience</h2>
 
     <!-- S&P Global -->
-    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+    <div class="experience-item" data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
       <div style="font-weight: 500;">S&P Global</div>
       <div style="text-align: right;">
         <div style="font-weight: 500;">Software Engineer Intern</div>
-        <div style="color: gray;">July 2024 - October 2024</div>
+        <div style="color: gray;">July 2024 – October 2024</div>
       </div>
     </div>
 
     <!-- Hydro One -->
-    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+    <div class="experience-item" data-aos="fade-up" data-aos-delay="200" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
       <div style="font-weight: 500;">Hydro One</div>
       <div style="text-align: right;">
         <div style="font-weight: 500;">Technical Analyst Intern</div>
@@ -64,57 +62,66 @@
     </div>
 
     <!-- Appen AI -->
-    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+    <div class="experience-item" data-aos="fade-up" data-aos-delay="300" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
       <div style="font-weight: 500;">Appen AI</div>
       <div style="text-align: right;">
         <div style="font-weight: 500;">Associate Product Intern</div>
-        <div style="color: gray;">June 2023 - August 2023</div>
+        <div style="color: gray;">June 2023 – August 2023</div>
       </div>
     </div>
 
     <!-- Deloitte -->
-    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+    <div class="experience-item" data-aos="fade-up" data-aos-delay="400" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
       <div style="font-weight: 500;">Deloitte</div>
       <div style="text-align: right;">
         <div style="font-weight: 500;">Product Management Intern</div>
-        <div style="color: gray;">January 2023 - April 2023</div>
+        <div style="color: gray;">January 2023 – April 2023</div>
       </div>
     </div>
   </div>
 </section>
 
-</div>
 
 
 
     <!-- Resumes -->
     <section id="resume" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
-      <div class="container" style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;">Resumes</h2>
+      <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2rem;" data-aos="fade-right">Resumes</h2>
     
-        <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
-          <div style="font-weight: 500;">Product Resume</div>
-          <div style="text-align: right;">
-            <a href="/product-resume.pdf" target="_blank" style="color: #ccc; text-decoration: underline;">View PDF</a>
-          </div>
-        </div>
-
-
-        <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
-          <div style="font-weight: 500;">Software Resume</div>
-          <div style="text-align: right;">
-            <a href="/software-resume.pdf" target="_blank" style="color: #ccc; text-decoration: underline;">View PDF</a>
-          </div>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="/product-resume.pdf" target="_blank" class="resume-btn" data-aos="zoom-in" data-aos-delay="100">SEE MY PRODUCT RESUME</a>
+          <a href="/software-resume.pdf" target="_blank" class="resume-btn" data-aos="zoom-in" data-aos-delay="200">SEE MY SOFTWARE RESUME</a>
         </div>
       </div>
     </section>
     
+    <style>
+      .resume-btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border: 1px solid #ccc;
+        color: #ccc;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+      .resume-btn:hover {
+        background-color: white;
+        color: black;
+        border-color: white;
+      }
+    </style>
+    
+    
     <!-- Education -->
     <section id="education" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
       <div class="container" style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;">Education</h2>
+        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;" data-aos="fade-right">Education</h2>
     
-        <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+        <div data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
           <div style="font-weight: 500;">Western University</div>
           <div style="text-align: right;">
             <div style="font-weight: 500;">B.Sc. in Computer Science</div>
@@ -122,7 +129,7 @@
           </div>
         </div>
     
-        <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+        <div data-aos="fade-up" data-aos-delay="200" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
           <div style="font-weight: 500;">Ivey Business School</div>
           <div style="text-align: right;">
             <div style="font-weight: 500;">HBA in Business Administration</div>
@@ -131,6 +138,7 @@
         </div>
       </div>
     </section>
+    
     
 
   
@@ -309,10 +317,10 @@
   
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills & Tools</h2>
-      <ul class="skills-list">
+  <section id="skills" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2rem;" data-aos="fade-right">Skills & Tools</h2>
+      <ul class="skills-list" data-aos="fade-up" data-aos-delay="100" style="color: #ccc; line-height: 2;">
         <li><strong>Programming:</strong> Python, Java, JavaScript, C/C++, SQL, HTML, CSS</li>
         <li><strong>Frameworks:</strong> React, Node.js, Express, Redux, Spring Boot, Django</li>
         <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
@@ -321,6 +329,7 @@
       </ul>
     </div>
   </section>
+  
 
 
 
