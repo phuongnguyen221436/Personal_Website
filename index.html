@@ -133,27 +133,36 @@
   <div class="modal-content">
     <span class="close-button" onclick="closeFintechModal()">×</span>
     <div class="modal-body">
-      <h2>Fintech — Simulated Payment Processing App</h2>
+      <h2>Fintech — Full-Stack Payment Processing System</h2>
       <p><strong>Timeframe:</strong> 2025</p>
-      <p><strong>Category:</strong> Personal / Technical Project</p>
+      <p><strong>Category:</strong> Full-Stack Application / Product Case Study</p>
 
       <h3>Summary</h3>
       <p>
-        This project simulates a real-world e-commerce checkout experience. I designed and built a multi-step flow using React, TypeScript, and CSS,
-        with localStorage support, a dynamic cart system, and receipt generation — deployed on Render.
+        This project simulates a high-fidelity e-commerce payment flow, end-to-end. I built a multi-layered system incorporating a React + TypeScript frontend,
+        Spring Boot backend, RESTful APIs, and PostgreSQL/MongoDB for data persistence. The system mimics real-world online transactions: users can browse items, 
+        manage a cart, proceed through a secure checkout, and receive a digital receipt. Everything is fully deployed on Render.
       </p>
 
       <h3>Problem</h3>
       <p>
-        Many payment demos skip over realistic flows and focus only on single-step transactions. I wanted to build a user-friendly flow that mirrors what real users experience: a cart, form validation, and receipts — but fully simulated.
+        E-commerce checkouts often suffer from friction — users abandon carts due to poor UX, unclear totals, or a lack of feedback. In many existing demos or projects, 
+        payment logic is hardcoded, brittle, or frontend-only, leaving out critical backend flows like transaction validation, receipt generation, or API resilience.
+      </p>
+      <p>
+        As a product builder, I set out to create a checkout experience that feels complete: easy to use, reliable, fast, and representative of the full stack required 
+        to build confidence in a simulated payment.
       </p>
 
       <h3>Features</h3>
       <ul>
-        <li><strong>Dynamic Cart System:</strong> Add/remove products, track running totals, and persist cart in localStorage</li>
-        <li><strong>Multi-Step UI:</strong> Cart → Payment → Receipt flow, with progress tracking and validation</li>
-        <li><strong>Custom Receipt Generation:</strong> Full receipt with item breakdown, date, amount, and status badge</li>
-        <li><strong>Deployed on Render:</strong> Fully functional live version for testing</li>
+        <li><strong>Product Catalog:</strong> Predefined product data from MongoDB</li>
+        <li><strong>Dynamic Shopping Cart:</strong> Add/remove items, real-time updates, persistent in localStorage</li>
+        <li><strong>Step-by-Step Checkout UI:</strong> Guided form with optional name/email input, validation</li>
+        <li><strong>Payment Simulation:</strong> Backend logic mimics real payment approval logic</li>
+        <li><strong>Receipt System:</strong> Users receive a digital summary styled as a modern invoice</li>
+        <li><strong>Order History Query:</strong> All transactions are saved and retrievable</li>
+        <li><strong>CI/CD Pipeline:</strong> Every push triggers a rebuild and redeploy</li>
       </ul>
 
       <h3>Demo</h3>
@@ -164,13 +173,16 @@
 
       <h3>Outcome & Learning</h3>
       <p>
-        I sharpened my frontend state management skills, practiced building responsive layouts, and implemented full simulated logic without a backend. It’s now one of the most polished solo apps in my portfolio.
+        Strengthened my skills in product scoping and technical execution, balanced frontend polish with backend rigor, and improved my ability 
+        to document, test, and iterate across a full stack. This project reflects my ability to think like a PM *and* engineer: shipping a scoped, 
+        usable, and technically sound product.
       </p>
 
-      <p><strong>GitHub:</strong> <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">View on GitHub</a></p>
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">View on GitHub</a></p>
     </div>
   </div>
 </div>
+
 
 <div id="cinematch-modal" class="modal-overlay">
   <div class="modal-content">
