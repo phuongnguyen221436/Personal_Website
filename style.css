@@ -183,11 +183,12 @@ body {
   flex: 1;
   max-width: 600px;
   animation: slideUp 1s ease-out;
+  font-size: 1.5rem;
 }
 .hero h1 {
   font-family: 'Manrope', sans-serif;
   font-weight: 100;
-  font-size: 7rem;
+  font-size: 4rem;
   color: white;
   margin-bottom: 1.2rem;
   line-height: 1.1;
