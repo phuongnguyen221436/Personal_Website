@@ -29,6 +29,9 @@
       <h1>Hi, I'm Brielle <span>👋</span></h1>
       <p><span id="typing-text"></span></p>
     </div>
+    <div class="scroll-indicator">
+      <span class="chevron"></span>
+    </div>
   </header>
 
   <!-- About Section -->
@@ -41,6 +44,8 @@
       I'm especially drawn to high-impact challenges where thoughtful design and scalable code come together to solve real user problems.
     </p>
   </section>
+
+  <div class="section-divider"></div>
 
   <!-- Experience Section -->
   <section id="experience" class="section">
@@ -77,6 +82,8 @@
     </div>
   </section>
 
+  <div class="section-divider"></div>
+
   <!-- Resume Section -->
   <section id="resume" class="section">
     <h2>Resumes</h2>
@@ -85,6 +92,8 @@
       <a href="assets/pdf/BrielleNguyen - Resume_Tech (2025).pdf" target="_blank" class="contact-btn" style="background:#fff; color:#0077ff; border:1.5px solid #0077ff;">SEE MY SOFTWARE RESUME</a>
     </div>
   </section>
+
+  <div class="section-divider"></div>
 
   <!-- Education Section -->
   <section id="education" class="section">
@@ -106,6 +115,8 @@
       </div>
     </div>
   </section>
+
+  <div class="section-divider"></div>
 
   <!-- Projects Section -->
   <section id="projects" class="section">
@@ -287,6 +298,35 @@
       if (event.target === cm) closeModal();
       if (event.target === fm) closeFintechModal();
     };
+  </script>
+  <script>
+    // Navbar scrollspy
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sectionsArr = Array.from(document.querySelectorAll('section'));
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sectionsArr.forEach(sec => {
+        const secTop = sec.offsetTop - 120;
+        if (window.scrollY >= secTop) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+    });
+  </script>
+  <script>
+    // Animate sections on scroll
+    const sections = document.querySelectorAll('.section');
+    const revealSections = () => {
+      const trigger = window.innerHeight * 0.92;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) sec.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', revealSections);
+    window.addEventListener('DOMContentLoaded', revealSections);
   </script>
 </body>
 </html>

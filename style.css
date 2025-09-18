@@ -6,6 +6,7 @@
 body {
   font-family: 'Inter', Arial, sans-serif;
   background: #f8f9fb;
+  background-image: radial-gradient(circle at 80% 20%, #eae6fa 10%, transparent 60%);
   color: #232136;
   line-height: 1.7;
   min-height: 100vh;
@@ -59,6 +60,9 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+.nav-links a.active {
+  color: #2cb67d;
+}
 .contact-btn {
   background: linear-gradient(90deg,#7f5af0 0%,#2cb67d 100%);
   color: #fff;
@@ -75,6 +79,12 @@ body {
 .contact-btn:hover {
   background: linear-gradient(90deg,#2cb67d 0%,#7f5af0 100%);
   transform: translateY(-2px) scale(1.04);
+}
+
+/* Button ripple effect */
+.contact-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 4px rgba(127,90,240,0.12);
 }
 
 /* Hero Section */
@@ -113,6 +123,13 @@ body {
   border-radius: 22px;
   box-shadow: 0 4px 32px rgba(127,90,240,0.07);
   margin-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+.section.visible {
+  opacity: 1;
+  transform: none;
 }
 .section h2 {
   font-family: 'Poppins', sans-serif;
@@ -121,6 +138,14 @@ body {
   margin-bottom: 1.5rem;
   color: #7f5af0;
   letter-spacing: -0.5px;
+}
+.section-divider {
+  width: 80px;
+  height: 6px;
+  margin: 3rem auto 2rem auto;
+  border-radius: 3px;
+  background: linear-gradient(90deg,#7f5af0 0%,#2cb67d 100%);
+  opacity: 0.15;
 }
 
 /* Experience & Education */
@@ -210,6 +235,21 @@ body {
   text-decoration: underline;
   color: #7f5af0;
 }
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+.project-tags span {
+  background: #e0d7fa;
+  color: #7f5af0;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
 
 /* Skills */
 .skills-list {
@@ -288,6 +328,32 @@ footer {
   background: none;
   padding: 0;
   border-top: 1px solid #e0d7fa;
+}
+
+/* Focus States */
+a:focus, button:focus, .contact-btn:focus {
+  outline: 2px solid #2cb67d;
+  outline-offset: 2px;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.chevron {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-bottom: 3px solid #7f5af0;
+  border-right: 3px solid #7f5af0;
+  transform: rotate(45deg);
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) rotate(45deg);}
+  50% { transform: translateY(12px) rotate(45deg);}
 }
 
 /* Responsive */
