@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="assets/images/pageicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brielle Nguyen | SWE & Product Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/images/pageicon.png" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
 </head>
 <body>
   <!-- Navigation -->
@@ -27,399 +23,238 @@
     <a href="#contact" class="contact-btn">Let’s Talk</a>
   </nav>
 
-<!-- Hero Section -->
-<header class="hero static-hero" style="background: grey; color: white; padding: 6rem 1.5rem; font-family: 'Inter', sans-serif;">
-  <div class="hero-content" style="max-width: 900px; margin: 0 auto;" data-aos="fade-up">
-    <h1 style="font-size: clamp(2.25rem, 5vw, 3rem); font-weight: 700; margin-bottom: 1rem;">
-      Hi, I'm Brielle <span style="font-size: 2.5rem;">👋</span>
-    </h1>
-    <p style="
-    font-size: clamp(1.25rem, 2.5vw, 2rem);
-    font-weight: 400;
-    color: #aaa;
-    line-height: 1.6;
-    max-width: 100%;
-  ">
-  <span id="typing-text"></span>
-  </p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Brielle <span>👋</span></h1>
+      <p><span id="typing-text"></span></p>
+    </div>
+  </header>
 
-    
-  </div>
-</header>
-
-
-  
-<!-- About Me Section -->
-<section id="about" class="section" style="background: black; color: white; padding: 5rem 1.5rem;">
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-    
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem;" data-aos="fade-right">
-      About Me
-    </h2>
-    <hr data-aos="fade-right" data-aos-delay="100"
-    style="border: none; height: 2px; width: 48px; margin: 1rem 0 2rem;" />
-
-    <p data-aos="fade-up" data-aos-delay="200" style="line-height: 1.8; color: #ccc; font-size: 1.125rem;">
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
       I’m a dual-degree graduate from Western University with a BSc in Computer Science and an HBA from Ivey Business School.
-    </p>
-
-    <p data-aos="fade-up" data-aos-delay="300" style="line-height: 1.8; color: #ccc; font-size: 1.125rem; margin-top: 1.5rem;">
       I’ve worked on microservices, CI/CD automation, and backend API development with a strong focus on performance, reliability, and clean architecture.
       I approach engineering with a product mindset: I care deeply not just about how things are built, but why.
-    </p>
-
-    <p data-aos="fade-up" data-aos-delay="400" style="line-height: 1.8; color: #ccc; font-size: 1.125rem; margin-top: 1.5rem;">
       I'm especially drawn to high-impact challenges where thoughtful design and scalable code come together to solve real user problems.
     </p>
+  </section>
 
-  </div>
-</section>
-
-
-
-<!-- Experience Section -->
-<section id="experience" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;" data-aos="fade-right">Experience</h2>
-
-    <!-- S&P Global -->
-    <div class="experience-item" data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
-      <div style="font-weight: 500;">S&P Global</div>
-      <div style="text-align: right;">
-        <div style="font-weight: 500;">Software Engineer Intern</div>
-        <div style="color: gray;">July 2024 – October 2024</div>
-      </div>
-    </div>
-
-    <!-- Hydro One -->
-    <div class="experience-item" data-aos="fade-up" data-aos-delay="200" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
-      <div style="font-weight: 500;">Hydro One</div>
-      <div style="text-align: right;">
-        <div style="font-weight: 500;">Technical Analyst Intern</div>
-        <div style="color: gray;">May 2024 – July 2024</div>
-      </div>
-    </div>
-
-    <!-- Appen AI -->
-    <div class="experience-item" data-aos="fade-up" data-aos-delay="300" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
-      <div style="font-weight: 500;">Appen AI</div>
-      <div style="text-align: right;">
-        <div style="font-weight: 500;">Associate Product Manager Intern</div>
-        <div style="color: gray;">June 2023 – August 2023</div>
-      </div>
-    </div>
-
-    <!-- Deloitte -->
-    <div class="experience-item" data-aos="fade-up" data-aos-delay="400" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
-      <div style="font-weight: 500;">Deloitte</div>
-      <div style="text-align: right;">
-        <div style="font-weight: 500;">Product Management Intern</div>
-        <div style="color: gray;">January 2023 – April 2023</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-    <!-- Resumes -->
-    <section id="resume" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
-      <div class="container" style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2rem;" data-aos="fade-right">Resumes</h2>
-    
-        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-          <a href="assets/pdf/BrielleNguyen - Resume (2025).pdf" target="_blank" class="resume-btn" data-aos="zoom-in" data-aos-delay="100">SEE MY PRODUCT RESUME</a>
-          <a href="assets/pdf/BrielleNguyen - Resume_Tech (2025).pdf" target="_blank" class="resume-btn" data-aos="zoom-in" data-aos-delay="200">SEE MY SOFTWARE RESUME</a>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="experience-list">
+      <div class="experience-card">
+        <div class="exp-header">
+          <span class="exp-company">S&P Global</span>
+          <span class="exp-title">Software Engineer Intern</span>
         </div>
+        <div class="exp-dates">July 2024 – October 2024</div>
       </div>
-    </section>
-    
-    <style>
-      .resume-btn {
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        border: 1px solid #ccc;
-        color: #ccc;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 0.05em;
-        border-radius: 6px;
-        transition: all 0.3s ease;
-      }
-      .resume-btn:hover {
-        background-color: white;
-        color: black;
-        border-color: white;
-      }
-    </style>
-    
-    
-    <!-- Education -->
-    <section id="education" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
-      <div class="container" style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;" data-aos="fade-right">Education</h2>
-    
-        <div data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
-          <div style="font-weight: 500;">Western University</div>
-          <div style="text-align: right;">
-            <div style="font-weight: 500;">B.Sc. in Computer Science</div>
-            <div style="color: gray;">2020 – 2025</div>
-          </div>
+      <div class="experience-card">
+        <div class="exp-header">
+          <span class="exp-company">Hydro One</span>
+          <span class="exp-title">Technical Analyst Intern</span>
         </div>
-    
-        <div data-aos="fade-up" data-aos-delay="200" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
-          <div style="font-weight: 500;">Ivey Business School</div>
-          <div style="text-align: right;">
-            <div style="font-weight: 500;">HBA in Business Administration</div>
-            <div style="color: gray;">2020 – 2025</div>
-          </div>
-        </div>
+        <div class="exp-dates">May 2024 – July 2024</div>
       </div>
-    </section>
-    
-
-<!-- Projects Section -->
-<section id="projects" class="section projects-section">
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2.5rem;" data-aos="fade-right">Projects</h2>
-
-    <div class="projects-row">
-
-      <!-- CineMatch -->
-      <div class="project-box" onclick="openModal()">
-        <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank">
-          <video autoplay muted loop playsinline class="project-video">
-            <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </a>
-        <div class="project-info" onclick="openModal()">
-          <h4>CineMatch</h4>
-          <p>AI-powered iOS app for personalized movie recommendations using mood filters, GPT review summaries, and a custom “belly ranking” system.</p>
-          <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank" class="project-link">View on GitHub</a>
+      <div class="experience-card">
+        <div class="exp-header">
+          <span class="exp-company">Appen AI</span>
+          <span class="exp-title">Associate Product Manager Intern</span>
         </div>
+        <div class="exp-dates">June 2023 – August 2023</div>
       </div>
-
-      <!-- Fintech -->
-      <div class="project-box" onclick="openFintechModal()">
-        <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">
-          <video autoplay muted loop playsinline class="project-video">
-            <source src="assets/videos/paymentpsdemo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </a>
-        <div class="project-info" onclick="openFintechModal()">
-          <h4>Fintech</h4>
-          <p>A TypeScript + React payment simulation with a real-time cart, multi-step secure checkout, and digital receipts. Fully deployed on Render.</p>
-          <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank" class="project-link">View on GitHub</a>
+      <div class="experience-card">
+        <div class="exp-header">
+          <span class="exp-company">Deloitte</span>
+          <span class="exp-title">Product Management Intern</span>
         </div>
+        <div class="exp-dates">January 2023 – April 2023</div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Fintech Case Study Modal -->
-<div id="fintech-modal" class="modal-overlay">
-  <div class="modal-content">
-    <span class="close-button" onclick="closeFintechModal()">×</span>
-    <div class="modal-body">
-      <h2>Fintech — Full-Stack Payment Processing System</h2>
-      <p><strong>Timeframe:</strong> 2025</p>
-      <p><strong>Category:</strong> Full-Stack Application / Product Case Study</p>
-
-      <h3>Summary</h3>
-      <p>
-        This project simulates a high-fidelity e-commerce payment flow, end-to-end. I built a multi-layered system incorporating a React + TypeScript frontend,
-        Spring Boot backend, RESTful APIs, and PostgreSQL/MongoDB for data persistence. The system mimics real-world online transactions: users can browse items, 
-        manage a cart, proceed through a secure checkout, and receive a digital receipt. Everything is fully deployed on Render.
-      </p>
-
-      <h3>Problem</h3>
-      <p>
-        E-commerce checkouts often suffer from friction — users abandon carts due to poor UX, unclear totals, or a lack of feedback. In many existing demos or projects, 
-        payment logic is hardcoded, brittle, or frontend-only, leaving out critical backend flows like transaction validation, receipt generation, or API resilience.
-      </p>
-      <p>
-        As a product builder, I set out to create a checkout experience that feels complete: easy to use, reliable, fast, and representative of the full stack required 
-        to build confidence in a simulated payment.
-      </p>
-
-      <h3>Features</h3>
-      <ul>
-        <li><strong>Product Catalog:</strong> Predefined product data from MongoDB</li>
-        <li><strong>Dynamic Shopping Cart:</strong> Add/remove items, real-time updates, persistent in localStorage</li>
-        <li><strong>Step-by-Step Checkout UI:</strong> Guided form with optional name/email input, validation</li>
-        <li><strong>Payment Simulation:</strong> Backend logic mimics real payment approval logic</li>
-        <li><strong>Receipt System:</strong> Users receive a digital summary styled as a modern invoice</li>
-        <li><strong>Order History Query:</strong> All transactions are saved and retrievable</li>
-        <li><strong>CI/CD Pipeline:</strong> Every push triggers a rebuild and redeploy</li>
-      </ul>
-     
-
-      <h3>Demo</h3>
-      <video autoplay muted loop playsinline style="width: 100%; border-radius: 12px;">
-        <source src="assets/videos/paymentpsdemo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-      <h3>Outcome & Learning</h3>
-      <p>
-        Strengthened my skills in product scoping and technical execution, balanced frontend polish with backend rigor, and improved my ability 
-        to document, test, and iterate across a full stack. This project reflects my ability to think like a PM *and* engineer: shipping a scoped, 
-        usable, and technically sound product.
-      </p>
-
-      <p><strong>GitHub Repository:</strong> <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">View on GitHub</a></p>
-    </div>
-  </div>
-</div>
-
-
-<div id="cinematch-modal" class="modal-overlay">
-  <div class="modal-content">
-    <span class="close-button" onclick="closeModal()">×</span>
-    <div class="modal-body">
-      <h2>CineMatch — AI-Powered Movie Guide</h2>
-      <p><strong>Timeframe:</strong> 2024–2025</p>
-      <p><strong>Category:</strong> Personal / Technical Product</p>
-
-      <h3>Summary</h3>
-      <p>
-        CineMatch is an AI-powered iOS app that recommends movies based on a user’s mood, preferences, and emotional response.
-        I designed, built, and tested it using SwiftUI, FastAPI, PostgreSQL, and OpenAI’s API. It includes a unique “belly ranking” system,
-        GPT-generated review summaries, and mood-driven search. Over 40 beta users tested the app.
-      </p>
-
-      <h3>Problem</h3>
-      <p>
-        Existing streaming platforms often offer shallow or repetitive recommendations. Traditional filters fail to reflect emotional taste or shifting moods.
-        CineMatch aims to make finding the *right* movie easier and more personal.
-      </p>
-
-      <h3>Research & Ideation</h3>
-      <ul>
-        <li>People often rewatch emotionally satisfying films—not just “top-rated” ones.</li>
-        <li>Users dislike reading long reviews.</li>
-        <li>Genre is not always predictive of interest.</li>
-      </ul>
-      <p>Validated the need for a mood-first, feedback-driven recommendation tool.</p>
-
-      <h3>Key Features</h3>
-      <ul>
-        <li><strong>Movie Tier List:</strong> “Loved it”, “It was fine”, “Didn’t like it” — generates a relative 1–10 score</li>
-        <li><strong>Mood Filtering:</strong> Users input their mood or vibe, parsed via natural language</li>
-        <li><strong>GPT Review Summaries:</strong> One-paragraph takeaways auto-generated from online reviews</li>
-      </ul>
-      <h3>User Flow Diagram</h3>
-      <img src="assets/images/user-flow-diagram.png" alt="User Flow Diagram" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
-
-
-      <h3>Demo</h3>
-      <video autoplay muted loop playsinline style="width: 50%; border-radius: 12px; margin-bottom: 1rem;">
-        <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-      <h3>Launch</h3>
-      <ul>
-        <li>40+ beta users in 2 weeks</li>
-        <li>80% said recommendations and rankings tier list felt personal</li>
-      </ul>
-
-      <h3>Outcome & Learning</h3>
-      <p>
-        CineMatch taught me how to scope MVPs, balance delight with feasibility, and use user feedback to iterate rapidly.
-        Most importantly, it reaffirmed that great products
-        </p>
-        <p><strong>GitHub Repository:</strong> <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank">View on GitHub</a></p>
-
-      </div> <!-- close modal-body -->
-    </div>   <!-- close modal-content -->
-  </div>     <!-- close modal-overlay -->
-  
-
-
-
-
-
-  
-  
-
-  <!-- Skills Section -->
-  <section id="skills" class="section" style="background: black; color: white; padding: 4rem 1.5rem;">
-    <div class="container" style="max-width: 800px; margin: 0 auto;">
-      <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2rem;" data-aos="fade-right">Skills & Tools</h2>
-      <ul class="skills-list" data-aos="fade-up" data-aos-delay="100" style="color: #ccc; line-height: 2;">
-        <li><strong>Programming:</strong> Python, Java, JavaScript, C/C++, SQL, HTML, CSS</li>
-        <li><strong>Frameworks:</strong> React, Node.js, Express, Redux, Spring Boot, Django</li>
-        <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
-        <li><strong>Tools:</strong> Docker, Jenkins, AWS, Git, Hadoop, Apache Spark, Tableau, PowerBI, Figma, Salesforce</li>
-        <li><strong>Methodologies:</strong> Agile, Scrum, A/B Testing, UX Research, Roadmapping</li>
-      </ul>
     </div>
   </section>
-  
 
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <h2>Resumes</h2>
+    <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+      <a href="assets/pdf/BrielleNguyen - Resume (2025).pdf" target="_blank" class="contact-btn">SEE MY PRODUCT RESUME</a>
+      <a href="assets/pdf/BrielleNguyen - Resume_Tech (2025).pdf" target="_blank" class="contact-btn" style="background:#fff; color:#0077ff; border:1.5px solid #0077ff;">SEE MY SOFTWARE RESUME</a>
+    </div>
+  </section>
 
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="experience-list">
+      <div class="experience-card">
+        <div class="exp-header">
+          <span class="exp-company">Western University</span>
+          <span class="exp-title">B.Sc. in Computer Science</span>
+        </div>
+        <div class="exp-dates">2020 – 2025</div>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header">
+          <span class="exp-company">Ivey Business School</span>
+          <span class="exp-title">HBA in Business Administration</span>
+        </div>
+        <div class="exp-dates">2020 – 2025</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <div class="project-card" onclick="openModal()">
+        <video src="assets/videos/cinematchDemo.mp4" autoplay muted loop playsinline></video>
+        <h3>CineMatch</h3>
+        <p>AI-powered iOS app for personalized movie recommendations using mood filters, GPT review summaries, and a custom “belly ranking” system.</p>
+        <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      <div class="project-card" onclick="openFintechModal()">
+        <video src="assets/videos/paymentpsdemo.mp4" autoplay muted loop playsinline></video>
+        <h3>Fintech</h3>
+        <p>A TypeScript + React payment simulation with a real-time cart, multi-step secure checkout, and digital receipts. Fully deployed on Render.</p>
+        <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="fintech-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeFintechModal()">×</span>
+      <div class="modal-body">
+        <h2>Fintech — Full-Stack Payment Processing System</h2>
+        <p><strong>Timeframe:</strong> 2025</p>
+        <p><strong>Category:</strong> Full-Stack Application / Product Case Study</p>
+        <h3>Summary</h3>
+        <p>
+          This project simulates a high-fidelity e-commerce payment flow, end-to-end. I built a multi-layered system incorporating a React + TypeScript frontend,
+          Spring Boot backend, RESTful APIs, and PostgreSQL/MongoDB for data persistence. The system mimics real-world online transactions: users can browse items, 
+          manage a cart, proceed through a secure checkout, and receive a digital receipt. Everything is fully deployed on Render.
+        </p>
+        <h3>Problem</h3>
+        <p>
+          E-commerce checkouts often suffer from friction — users abandon carts due to poor UX, unclear totals, or a lack of feedback. In many existing demos or projects, 
+          payment logic is hardcoded, brittle, or frontend-only, leaving out critical backend flows like transaction validation, receipt generation, or API resilience.
+        </p>
+        <p>
+          As a product builder, I set out to create a checkout experience that feels complete: easy to use, reliable, fast, and representative of the full stack required 
+          to build confidence in a simulated payment.
+        </p>
+        <h3>Features</h3>
+        <ul>
+          <li><strong>Product Catalog:</strong> Predefined product data from MongoDB</li>
+          <li><strong>Dynamic Shopping Cart:</strong> Add/remove items, real-time updates, persistent in localStorage</li>
+          <li><strong>Step-by-Step Checkout UI:</strong> Guided form with optional name/email input, validation</li>
+          <li><strong>Payment Simulation:</strong> Backend logic mimics real payment approval logic</li>
+          <li><strong>Receipt System:</strong> Users receive a digital summary styled as a modern invoice</li>
+          <li><strong>Order History Query:</strong> All transactions are saved and retrievable</li>
+          <li><strong>CI/CD Pipeline:</strong> Every push triggers a rebuild and redeploy</li>
+        </ul>
+        <h3>Demo</h3>
+        <video autoplay muted loop playsinline style="width: 100%; border-radius: 12px;">
+          <source src="assets/videos/paymentpsdemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Outcome & Learning</h3>
+        <p>
+          Strengthened my skills in product scoping and technical execution, balanced frontend polish with backend rigor, and improved my ability 
+          to document, test, and iterate across a full stack. This project reflects my ability to think like a PM <em>and</em> engineer: shipping a scoped, 
+          usable, and technically sound product.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/phuongnguyen221436/Real-Time-Payment-Processing-System" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cinematch-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">×</span>
+      <div class="modal-body">
+        <h2>CineMatch — AI-Powered Movie Guide</h2>
+        <p><strong>Timeframe:</strong> 2024–2025</p>
+        <p><strong>Category:</strong> Personal / Technical Product</p>
+        <h3>Summary</h3>
+        <p>
+          CineMatch is an AI-powered iOS app that recommends movies based on a user’s mood, preferences, and emotional response.
+          I designed, built, and tested it using SwiftUI, FastAPI, PostgreSQL, and OpenAI’s API. It includes a unique “belly ranking” system,
+          GPT-generated review summaries, and mood-driven search. Over 40 beta users tested the app.
+        </p>
+        <h3>Problem</h3>
+        <p>
+          Existing streaming platforms often offer shallow or repetitive recommendations. Traditional filters fail to reflect emotional taste or shifting moods.
+          CineMatch aims to make finding the <em>right</em> movie easier and more personal.
+        </p>
+        <h3>Research & Ideation</h3>
+        <ul>
+          <li>People often rewatch emotionally satisfying films—not just “top-rated” ones.</li>
+          <li>Users dislike reading long reviews.</li>
+          <li>Genre is not always predictive of interest.</li>
+        </ul>
+        <p>Validated the need for a mood-first, feedback-driven recommendation tool.</p>
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Movie Tier List:</strong> “Loved it”, “It was fine”, “Didn’t like it” — generates a relative 1–10 score</li>
+          <li><strong>Mood Filtering:</strong> Users input their mood or vibe, parsed via natural language</li>
+          <li><strong>GPT Review Summaries:</strong> One-paragraph takeaways auto-generated from online reviews</li>
+        </ul>
+        <h3>User Flow Diagram</h3>
+        <img src="assets/images/user-flow-diagram.png" alt="User Flow Diagram" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+        <h3>Demo</h3>
+        <video autoplay muted loop playsinline style="width: 50%; border-radius: 12px; margin-bottom: 1rem;">
+          <source src="assets/videos/cinematchDemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Launch</h3>
+        <ul>
+          <li>40+ beta users in 2 weeks</li>
+          <li>80% said recommendations and rankings tier list felt personal</li>
+        </ul>
+        <h3>Outcome & Learning</h3>
+        <p>
+          CineMatch taught me how to scope MVPs, balance delight with feasibility, and use user feedback to iterate rapidly.
+          Most importantly, it reaffirmed that great products...
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/phuongnguyen221436/CineMatch" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills & Tools</h2>
+    <ul class="skills-list">
+      <li><strong>Programming:</strong> Python, Java, JavaScript, C/C++, SQL, HTML, CSS</li>
+      <li><strong>Frameworks:</strong> React, Node.js, Express, Redux, Spring Boot, Django</li>
+      <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
+      <li><strong>Tools:</strong> Docker, Jenkins, AWS, Git, Hadoop, Apache Spark, Tableau, PowerBI, Figma, Salesforce</li>
+      <li><strong>Methodologies:</strong> Agile, Scrum, A/B Testing, UX Research, Roadmapping</li>
+    </ul>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="section">
-    <div class="container" style="max-width: 800px; margin: 0 auto;">
-      <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2rem;" data-aos="fade-right">Contact Me</h2>
-      <p>I'm always open to new opportunities, collaborations, or just a chat!</p>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:nguyenhaphuong2002@gmail.com">nguyenhaphuong2002@gmail.com</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/briellenguyen" target="_blank">linkedin.com/in/briellenguyen</a></p>
-    </div>
+    <h2>Contact Me</h2>
+    <p>I'm always open to new opportunities, collaborations, or just a chat!</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:nguyenhaphuong2002@gmail.com">nguyenhaphuong2002@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/briellenguyen" target="_blank">linkedin.com/in/briellenguyen</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Brielle Nguyen.</p>
   </footer>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 50
-    });
-  </script>
-  <script>
-    function openModal() {
-      document.getElementById("cinematch-modal").style.display = "flex";
-    }
-  
-    function closeModal() {
-      document.getElementById("cinematch-modal").style.display = "none";
-    }
-    function openFintechModal() {
-      document.getElementById("fintech-modal").style.display = "flex";
-    }
 
-    function closeFintechModal() {
-      document.getElementById("fintech-modal").style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      const cm = document.getElementById("cinematch-modal");
-      const fm = document.getElementById("fintech-modal");
-      if (event.target === cm) closeModal();
-      if (event.target === fm) closeFintechModal();
-    };
-
-  
-    // // Close modal when clicking outside the content box
-    // window.onclick = function(event) {
-    //   const modal = document.getElementById("cinematch-modal");
-    //   if (event.target === modal) {
-    //     closeModal();
-    //   }
-    // };
-  </script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     var typed = new Typed("#typing-text", {
       strings: [
@@ -434,9 +269,24 @@
       showCursor: true,
       cursorChar: "|"
     });
+    function openModal() {
+      document.getElementById("cinematch-modal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("cinematch-modal").style.display = "none";
+    }
+    function openFintechModal() {
+      document.getElementById("fintech-modal").style.display = "flex";
+    }
+    function closeFintechModal() {
+      document.getElementById("fintech-modal").style.display = "none";
+    }
+    window.onclick = function(event) {
+      const cm = document.getElementById("cinematch-modal");
+      const fm = document.getElementById("fintech-modal");
+      if (event.target === cm) closeModal();
+      if (event.target === fm) closeFintechModal();
+    };
   </script>
-  
-  
-  
 </body>
 </html>
