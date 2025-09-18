@@ -168,7 +168,7 @@ body {
 
 /* Chevron animation */
 .scroll-indicator .chevron {
-  display: inline-block;
+  display: flex;
   border: solid #2563eb;
   border-width: 0 4px 4px 0;
   padding: 10px;
