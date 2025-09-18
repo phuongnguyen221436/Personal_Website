@@ -114,6 +114,47 @@ body {
   color: #fff;
 }
 
+/* Hero animated background */
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 60% 40%, #e0eaff 0%, #f8fafc 100%);
+  animation: bgMove 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes bgMove {
+  0% { background-position: 60% 40%; }
+  100% { background-position: 40% 60%; }
+}
+
+/* Typed text styling */
+.hero-typed {
+  display: block;
+  font-size: 1.25rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  min-height: 2.2em;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Chevron animation */
+.scroll-indicator .chevron {
+  display: inline-block;
+  border: solid #2563eb;
+  border-width: 0 4px 4px 0;
+  padding: 10px;
+  transform: rotate(45deg);
+  margin-top: 1.5rem;
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) rotate(45deg);}
+  50% { transform: translateY(10px) rotate(45deg);}
+}
+
 /* Section Cards */
 .section {
   max-width: 900px;
