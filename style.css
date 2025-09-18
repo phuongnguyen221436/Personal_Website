@@ -371,3 +371,6 @@ a:focus, button:focus, .contact-btn:focus {
     font-size: 1rem;
   }
 }
+.typed-cursor {
+  display: none !important;
+}
