@@ -13,6 +13,5 @@ var typed = new Typed("#typing-text", {
   backSpeed: 25,
   backDelay: 1500,
   loop: true,
-  showCursor: true,
-  cursorChar: "|"
+  showCursor: false,
 });
