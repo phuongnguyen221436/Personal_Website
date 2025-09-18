@@ -5,8 +5,8 @@ toggleButton.addEventListener('click', () => {
 
 var typed = new Typed("#typing-text", {
   strings: [
-    "Aspiring Software Engineer",
-    "Product Manager in the making",
+    "Aspiring Software Engineer 👩‍💻",
+    "Product Manager in the making 🚀",
     "Passionate about impactful digital experiences"
   ],
   typeSpeed: 50,

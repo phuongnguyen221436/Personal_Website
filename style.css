@@ -168,19 +168,22 @@ body {
 
 /* Chevron animation */
 .scroll-indicator .chevron {
-  display: flex;
   border: solid #2563eb;
   border-width: 0 4px 4px 0;
   padding: 10px;
   transform: rotate(45deg);
   margin-top: 2.5rem;
   animation: bounce 1.5s infinite;
-  justify-content: center;
-  align-items: center;
 }
 @keyframes bounce {
   0%, 100% { transform: translateY(0) rotate(45deg);}
   50% { transform: translateY(10px) rotate(45deg);}
+}
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Section Cards */
