@@ -1,11 +1,11 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* Reset & Base */
 * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
 body {
   font-family: 'Inter', Arial, sans-serif;
-  background: #f6f7fb;
+  background: #f8fafc;
   color: #23272f;
   line-height: 1.7;
   min-height: 100vh;
@@ -14,7 +14,7 @@ body {
 /* Navbar */
 .navbar {
   background: #fff;
-  box-shadow: 0 2px 16px rgba(30,34,90,0.06);
+  box-shadow: 0 2px 8px rgba(30,34,90,0.04);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,14 +22,15 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-radius: 0 0 18px 18px;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 0;
 }
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 1.7rem;
-  color: #2d3a60;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: #23272f;
+  letter-spacing: 0.02em;
 }
 .nav-links {
   display: flex;
@@ -40,101 +41,97 @@ body {
   color: #23272f;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.08rem;
-  position: relative;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
   transition: color 0.2s;
 }
-.nav-links a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #3b82f6;
-  transition: width 0.3s;
-}
 .nav-links a:hover, .nav-links a.active {
-  color: #3b82f6;
+  color: #2563eb;
 }
-.nav-links a:hover::after, .nav-links a.active::after {
-  width: 100%;
-}
+.nav-links a::after { display: none; }
 .contact-btn {
   background: #23272f;
   color: #fff;
-  padding: 0.6rem 1.3rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.05rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  box-shadow: none;
   border: none;
-  box-shadow: 0 2px 8px rgba(30,34,90,0.08);
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s;
 }
 .contact-btn:hover {
-  background: #3b82f6;
-  color: #fff;
+  background: #2563eb;
 }
 
 /* Hero Section */
 .hero {
-  background: #f6f7fb;
+  background: #f8fafc;
   color: #23272f;
-  padding: 7rem 1.5rem 5rem 1.5rem;
-  text-align: center;
-  position: relative;
+  padding: 6rem 1.5rem 4rem 1.5rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .hero h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 3rem);
   font-weight: 700;
   margin-bottom: 1.2rem;
   color: #23272f;
-  letter-spacing: -1px;
-}
-.hero span {
-  font-size: 2.5rem;
+  letter-spacing: -0.5px;
 }
 .hero p {
-  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-size: 1.3rem;
   color: #5a6270;
   font-weight: 400;
-  margin: 0 auto;
+  margin-bottom: 2.5rem;
   max-width: 600px;
+}
+.hero .hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.hero .hero-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.hero .hero-btn.secondary {
+  background: #fff;
+  color: #23272f;
+  border: 1px solid #e5e7eb;
+}
+.hero .hero-btn:hover {
+  background: #1d4ed8;
+  color: #fff;
 }
 
 /* Section Cards */
 .section {
   max-width: 900px;
   margin: 3rem auto;
-  padding: 2.8rem 2rem;
+  padding: 2.5rem 2rem;
   background: #fff;
-  border-radius: 22px;
-  box-shadow: 0 8px 40px rgba(30,34,90,0.10);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(30,34,90,0.08);
+  border: 1px solid #e5e7eb;
   margin-bottom: 2.5rem;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
-}
-.section.visible {
-  opacity: 1;
-  transform: none;
 }
 .section h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
   color: #23272f;
-  letter-spacing: -0.5px;
-}
-.section-divider {
-  width: 80px;
-  height: 6px;
-  margin: 3rem auto 2rem auto;
-  border-radius: 3px;
-  background: #3b82f6;
-  opacity: 0.10;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
 }
 
 /* Experience & Education */
@@ -144,14 +141,12 @@ body {
   gap: 1.5rem;
 }
 .experience-card {
-  background: #f8fafc;
-  border-left: 5px solid #3b82f6;
-  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30,34,90,0.06);
   padding: 1.2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  box-shadow: 0 1px 4px rgba(30,34,90,0.04);
+  margin-bottom: 1.5rem;
 }
 .exp-header {
   display: flex;
@@ -161,7 +156,7 @@ body {
   font-size: 1.1rem;
 }
 .exp-title {
-  color: #3b82f6;
+  color: #2563eb;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -178,24 +173,23 @@ body {
   gap: 2rem;
 }
 .project-card {
-  background: #f8fafc;
-  border: 2px solid #e5e7eb;
-  border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(30,34,90,0.07);
-  padding: 1.2rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30,34,90,0.06);
+  padding: 1.2rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+  transition: box-shadow 0.2s, border 0.2s;
 }
 .project-card:hover {
-  transform: translateY(-4px) scale(1.03);
   box-shadow: 0 8px 32px rgba(30,34,90,0.13);
-  border: 2px solid #3b82f6;
+  border: 1px solid #2563eb;
 }
-.project-card video {
+.project-card video, .project-card img {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 0.5rem;
@@ -203,8 +197,8 @@ body {
 }
 .project-card h3 {
   margin: 0.5rem 0 0.2rem 0;
-  font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #23272f;
 }
@@ -214,11 +208,11 @@ body {
   margin: 0 0 0.5rem 0;
 }
 .project-link {
-  color: #3b82f6;
+  color: #2563eb;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 0.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .project-link:hover {
   text-decoration: underline;
@@ -232,7 +226,7 @@ body {
 }
 .project-tags span {
   background: #e5e7eb;
-  color: #3b82f6;
+  color: #2563eb;
   font-size: 0.85rem;
   padding: 0.2rem 0.7rem;
   border-radius: 12px;
@@ -273,20 +267,20 @@ body {
   max-height: 90vh;
   overflow-y: auto;
   color: #23272f;
-  border: 2px solid #e5e7eb;
+  border: 1px solid #e5e7eb;
 }
 .close-button {
   position: absolute;
   top: 1.2rem;
   right: 1.2rem;
   font-size: 1.5rem;
-  color: #3b82f6;
+  color: #2563eb;
   cursor: pointer;
   font-weight: 700;
 }
 .modal-body h2, .modal-body h3, .modal-body strong {
   color: #23272f;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .modal-body p, .modal-body ul, .modal-body li {
   color: #23272f;
@@ -299,9 +293,9 @@ body {
 
 /* Contact */
 #contact a {
-  color: #3b82f6;
+  color: #2563eb;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 #contact a:hover {
   text-decoration: underline;
@@ -314,12 +308,12 @@ footer {
   color: #888;
   font-size: 1rem;
   margin: 2.5rem 0 1rem 0;
-  background: none;
-  padding: 0;
+  background: #fff;
+  padding: 1.5rem 0 0 0;
   border-top: 1px solid #e5e7eb;
 }
 .footer-social a {
-  color: #3b82f6;
+  color: #2563eb;
   margin: 0 0.5rem;
   font-size: 1.4rem;
   transition: color 0.2s;
@@ -330,28 +324,8 @@ footer {
 
 /* Focus States */
 a:focus, button:focus, .contact-btn:focus {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #2563eb;
   outline-offset: 2px;
-}
-
-/* Scroll Indicator */
-.scroll-indicator {
-  margin-top: 2.5rem;
-  display: flex;
-  justify-content: center;
-}
-.chevron {
-  display: block;
-  width: 32px;
-  height: 32px;
-  border-bottom: 3px solid #3b82f6;
-  border-right: 3px solid #3b82f6;
-  transform: rotate(45deg);
-  animation: bounce 1.5s infinite;
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0) rotate(45deg);}
-  50% { transform: translateY(12px) rotate(45deg);}
 }
 
 /* Responsive */
